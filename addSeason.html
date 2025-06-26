@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Season Add</title>
+        <meta name="description" content="Generate FAyear numbers for new year"/>
+        
+        <script type="text/javascript" src="FA.js"></script>
+        <script type="text/javascript" src="SeasonAdd.js"></script>
+        <script type="text/javascript">
+        
+         function  gen() {
+           var textt = document.getElementById('candidates');
+           genFAhistoryYear(textt);
+           return false;
+         }
+        </script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+</head>
+
+<body >
+    
+    <div>
+        <form method=post style="float:left; width:250px;" onsubmit="return gen();">
+            <textarea id="candidates" cols=30 rows=40 wrap=soft></textarea>
+            
+            <button type="submit" >Generate Team Array</button>
+        </form>
+        <p id="pp" style="font-family:monospace; float:left; padding-left: 40px; display:block; width:310px;"></p>
+    </div>
+        
+       
+        
+        
+        
+
+</body>
+</html>
+

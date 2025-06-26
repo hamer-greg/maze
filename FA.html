@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Football Association Results History</title>
+        <link rel="icon" href="faCup.png" type="image">
+        <meta name="description" content="Football Association league results by year"/>
+        <meta name="keywords" content="English Football,League,Premier,relegation,promotion,FA,Championship"/>
+        <script type="text/javascript" src="FA.js?z"></script>
+ <script type="text/javascript" src="SeasonAdd.js"></script>
+ <style type="text/css">
+            table { border-spacing: 0px}
+           td {
+                font-size: 8pt; border-width: 1px; border-style: solid; border-color: black; border-collapse: collapse; padding: 2px; white-space: nowrap; cursor: hand; }
+            }
+             a:hover{color:black; text-decoration:none;}
+             a:visited{color:black; text-decoration:none;}
+             a:link{ color:black; text-decoration:none;}
+             a:active{color:black; text-decoration:none;}
+            table { border-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px;}
+            .FAcup {background-image: none ; /* url("star.png"); */
+                background-repeat: no-repeat;
+                background-position: right;
+                background-attachment: local;}
+     /* teams that have dark highlight colors need an entry here so the text color can toggle also*/
+/*blue background teams*/
+ .c29  a {color:black;}
+ .c41  a {color:black;}
+ .c44  a {color:black;}
+ .c65  a {color:black;}
+ .c95  a {color:black;}
+ .c90  a {color: black;}
+ .c145 a {color: black;}
+ .c174 a {color: black;}
+/* black background teams*/
+ .c58  a {color:black;}
+ .c118 a {color:black;}
+ .c160 a {color:black;}
+ .c166 a {color:black;}
+ /* maroon background teams*/
+ .c12  a {color:black;}
+ .c33  a {color:black;}
+ .c172 a {color:black;}
+ 
+ .c0 {background-color: white;}
+ .c1 {background-color: white;}
+       .c2 {background-color: white;}
+       .c3 {background-color: white;}
+       .c4 {background-color: white;}
+       .c5 {background-color: white;}
+       .c6 {background-color: white;}
+       .c7 {background-color: white;}
+       .c8 {background-color: white;}
+       .c9 {background-color: white;}
+       .c10 {background-color: white;}
+       .c11 {background-color: white;}
+       .c12 {background-color: white;}
+       .c13 {background-color: white;}
+       .c14 {background-color: white;}
+       .c15 {background-color: white;}
+       .c16 {background-color: white;}
+       .c17 {background-color: white;}
+       .c18 {background-color: white;}
+       .c19 {background-color: white;}
+       .c20 {background-color: white;}
+       .c21 {background-color: white;}
+       .c22 {background-color: white;}
+       .c23 {background-color: white;}
+       .c24 {background-color: white;}
+       .c25 {background-color: white;}
+       .c26 {background-color: white;}
+       .c27 {background-color: white;}
+       .c28 {background-color: white;}
+       .c29 {background-color: white;}
+       .c30 {background-color: white;}
+       .c31 {background-color: white;}
+       .c32 {background-color: white;}
+       .c33 {background-color: white;}
+       .c34 {background-color: white;}
+       .c35 {background-color: white;}
+       .c36 {background-color: white;}
+       .c37 {background-color: white;}
+       .c38 {background-color: white;}
+       .c39 {background-color: white;}
+       .c40 {background-color: white;}
+       .c41 {background-color: white;}
+       .c42 {background-color: white;}
+       .c43 {background-color: white;}
+       .c44 {background-color: white;}
+       .c45 {background-color: white;}
+       .c46 {background-color: white;}
+       .c47 {background-color: white;}
+       .c48 {background-color: white;}
+       .c49 {background-color: white;}
+       .c50 {background-color: white;}
+       .c51 {background-color: white;}
+       .c52 {background-color: white;}
+       .c53 {background-color: white;}
+       .c54 {background-color: white;}
+       .c55 {background-color: white;}
+       .c56 {background-color: white;}
+       .c57 {background-color: white;}
+       .c58 {background-color: white;}
+       .c59 {background-color: white;}
+       .c60 {background-color: white;}
+       .c61 {background-color: white;}
+       .c62 {background-color: white;}
+       .c63 {background-color: white;}
+       .c64 {background-color: white;}
+       .c65 {background-color: white;}
+       .c66 {background-color: white;}
+       .c67 {background-color: white;}
+       .c68 {background-color: white;}
+       .c69 {background-color: white;}
+       .c70 {background-color: white;}
+       .c71 {background-color: white;}
+       .c72 {background-color: white;}
+       .c73 {background-color: white;}
+       .c74 {background-color: white;}
+       .c75 {background-color: white;}
+       .c76 {background-color: white;}
+       .c77 {background-color: white;}
+       .c78 {background-color: white;}
+       .c79 {background-color: white;}
+       .c80 {background-color: white;}
+       .c81 {background-color: white;}
+       .c82 {background-color: white;}
+       .c83 {background-color: white;}
+       .c84 {background-color: white;}
+       .c85 {background-color: white;}
+       .c86 {background-color: white;}
+       .c87 {background-color: white;}
+       .c88 {background-color: white;}
+       .c89 {background-color: white;}
+       .c90 {background-color: white;}
+       .c91 {background-color: white;}
+       .c92 {background-color: white;}
+       .c93 {background-color: white;}
+       .c94 {background-color: white;}
+       .c95 {background-color: white;}
+       .c96 {background-color: white;}
+       .c97 {background-color: white;}
+       .c98 {background-color: white;}
+       .c99 {background-color: white;}
+       .c100 {background-color: white;}
+       .c101 {background-color: white;}
+       .c102 {background-color: white;}
+       .c103 {background-color: white;}
+       .c104 {background-color: white;}
+       .c105 {background-color: white;}
+       .c106 {background-color: white;}
+       .c107 {background-color: white;}
+       .c108 {background-color: white;}
+       .c109 {background-color: white;}
+       .c110 {background-color: white;}
+       .c111 {background-color: white;}
+       .c112 {background-color: white;}
+       .c113 {background-color: white;}
+       .c114 {background-color: white;}
+       .c115 {background-color: white;}
+       .c116 {background-color: white;}
+       .c117 {background-color: white;}
+       .c118 {background-color: white;}
+       .c119 {background-color: white;}
+       .c120 {background-color: white;}
+       .c121 {background-color: white;}
+       .c122 {background-color: white;}
+       .c123 {background-color: white;}
+       .c124 {background-color: white;}
+       .c125 {background-color: white;}
+       .c126 {background-color: white;}
+       .c127 {background-color: white;}
+       .c128 {background-color: white;}
+       .c129 {background-color: white;}
+       .c130 {background-color: white;}
+       .c131 {background-color: white;}
+       .c132 {background-color: white;}
+       .c133 {background-color: white;}
+       .c134 {background-color: white;}
+       .c135 {background-color: white;}
+       .c136 {background-color: white;}
+       .c137 {background-color: white;}
+       .c138 {background-color: white;}
+       .c139 {background-color: white;}
+       .c140 {background-color: white;}
+       .c141 {background-color: white;}
+       .c142 {background-color: white;}
+       .c143 {background-color: white;}
+       .c144 {background-color: white;}
+       .c145 {background-color: white;}
+       .c146 {background-color: white;}
+       .c147 {background-color: white;}
+       .c148 {background-color: white;}
+       .c149 {background-color: white;}
+       .c150 {background-color: white;}
+       .c151 {background-color: white;}
+       .c152 {background-color: white;}
+       .c153 {background-color: white;}
+       .c154 {background-color: white;}
+       .c155 {background-color: white;}
+       .c156 {background-color: white;}
+       .c157 {background-color: white;}
+       .c158 {background-color: white;}
+       .c159 {background-color: white;}
+       .c160 {background-color: white;}
+       .c161 {background-color: white;}
+       .c162 {background-color: white;}
+       .c163 {background-color: white;}
+       .c164 {background-color: white;}
+       .c165 {background-color: white;}
+       .c166 {background-color: white;}
+       .c167 {background-color: white;}
+       .c168 {background-color: white;}
+       .c169 {background-color: white;}
+       .c170 {background-color: white;}
+       .c171 {background-color: white;}
+       .c172 {background-color: white;}
+       .c173 {background-color: white;}
+       .c174 {background-color: white;}
+       .c175 {background-color: white;}
+       .c176 {background-color: white;}
+       .c177 {background-color: white;}
+       .c178 {background-color: white;}
+       .c179 {background-color: white;}
+       .c180 {background-color: white;}
+       .c181 {background-color: white;}
+       .c182 {background-color: white;}
+       .c183 {background-color: white;}
+       .c184 {background-color: white;}
+       .c185 {background-color: white;}
+       .c186 {background-color: white;}
+       .c187 {background-color: white;}
+       .c188 {background-color: white;}
+       .c189 {background-color: white;}
+       .c190 {background-color: white;}
+       .c191 {background-color: white;}
+       .c192 {background-color: white;}
+       .c193 {background-color: white;}
+       .c194 {background-color: white;}
+       .c195 {background-color: white;}
+       .c196 {background-color: white;}
+       .c197 {background-color: white;}
+       .c198 {background-color: white;}
+       .c199 {background-color: white;}
+       .c200 {background-color: white;}
+       .c201 {background-color: white;}
+       .c202 {background-color: white;}
+       .c203 {background-color: white;}
+       .c204 {background-color: white;}
+       .c205 {background-color: white;}
+       .c206 {background-color: white;}
+       .c207 {background-color: white;}
+       .c208 {background-color: white;}
+       .c209 {background-color: white;}
+       .c210 {background-color: white;}
+       .c211 {background-color: white;}
+       .c212 {background-color: white;}
+       .c213 {background-color: white;}
+       .c214 {background-color: white;}
+       .c215 {background-color: white;}
+       .c216 {background-color: white;}
+       .c218 {background-color: white;}
+
+      .rel  {font-weight: bold;}
+       .heading  {font-weight: bold; color: #808080; font-size: 10pt;}
+       html, body {
+           height: 100%;
+           margin: 0px;
+       }
+            </style>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body onload="buildTable(document.getElementById('cal0'));">
+        
+        <div>
+             <input id="check1" type="checkbox" onchange="toggleFA(this)"/>Show FA Cup winner<img src="fa-cup-5.png"/>&nbsp;&nbsp;&nbsp; Click in the empty space of a cell to highlight the team throughout the table.&nbsp;&nbsp;&nbsp; Click on text for the associated Wikipedia entry.
+            </div>
+            
+            
+                <table id="cal0"  border="0" cellpadding="0" style="display:block; overflow-x: scroll;width: auto;overflow-y: scroll;height: 95%;">
+            
+                </table>
+                
+                
+    </body>
+</html>

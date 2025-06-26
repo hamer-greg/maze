@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="maze.js"></script>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#maze {
+    border-color:#FFFFFF;
+  background-color:#FFFFFF;
+  border-collapse:collapse;
+  border-width:3px;
+  border-spacing:0;
+}
+    
+    td {
+        border-color:#000000;
+        padding-top:0;
+        padding-bottom:0;
+        padding-left:2px;
+        padding-right:0px;
+        border-top-width:0px;
+        border-left-width:0px;
+        border-bottom-width:0px;
+        border-right-width:0px;
+        width: 16px;
+            height: 16px;
+        
+    }
+    
+    .top {
+        border-top-width:3px;
+        
+    }
+    .left {
+        
+        border-left-width:3px;
+
+    }
+    .none {
+        border-top-width:0px;
+        border-left-width:0px;
+
+    }
+    .bottom {
+        border-bottom-width:3px;
+    }
+    .right {
+        border-right-width:3px;
+    }
+    .c0 {background-color: white;}
+    .c1 {background-color: #ffff00;}
+    .c2 {background-color: #c0c0c0;}
+    .c3 {background-color: #00ff00;}
+    .c4 {background-color: #00ffc0;}
+    .c5 {background-color: #ff0000;}
+    .c6 {background-color: cyan;}
+    .c7 {background-color: orange;}
+ </style>
+</head>
+<body>
+
+<h2>Maze</h2>
+<table id="maze"  border="2" bgcolor="white" cellpadding="3" border-spacing>
+
+</table>
+<div> &nbsp;</div>
+
+<body onload="buildTable(document.getElementById('maze'));">
+    
+    
+        
+        
+            
+            
+            
+</body>
+</body>
+</html>

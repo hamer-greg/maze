@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Wordle Candidates</title>
+        <meta name="description" content="wordle candidate words"/>
+        <script type="text/javascript" src="wordleCount.js"></script>
+        <script type="text/javascript" src="jotto.js"></script>
+        <script type="text/javascript" >
+            function changeBackground(element) {
+                if (element.className == "greybkgnd") {
+                    element.className = "goldbkgnd";
+                } else if (element.className == "goldbkgnd") {
+                    element.className = "greenbkgnd"
+                } else {
+                    element.className = "greybkgnd";
+                }
+                return true;
+            }
+            function updateKey(element,event) {
+                if (event.key.length == 1){
+                if (event.key <= "Z"  && event.key >= "A") {
+                    element.value = event.key;
+                    
+                } else if (event.key <= "z"  && event.key >= "a") {
+                    element.value = event.key.toUpperCase();
+                } else {
+                        element.value = "";
+                }
+                } else {
+                    element.value = "";
+                }
+            }
+            function changed(element) {
+                
+            }
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style type="text/css">
+                .greybkgnd {color:white; background-color: grey; font-weight:bold; font-size:x-large; text-decoration:none;border-color:white;}
+                .goldbkgnd {color:white; background-color: gold; font-weight:bold; font-size:x-large; text-decoration:none;border-color:white;}
+                .greenbkgnd {color:white; background-color: green; font-weight:bold; font-size:x-large; text-decoration:none;border-color:white;}
+                .original {  font-weight:bold; font-size:x-large; text-decoration:none; padding:3px 3px; border-color:black; border-style:solid;}
+                </style>
+</head>
+
+<body>
+    
+    <div style="flex-direction:row; display:flex;">
+        <form method=post style="width:250px;" onsubmit="return getBestCandidate(document.getElementById('candidates'));">
+            <textarea id="candidates" cols=20 rows=40 wrap=soft></textarea>
+            
+            <button type="submit" onsubmit="return getBestCandidate(document.getElementById('candidates'));"> Rank the candidates</button>
+            <div>
+            <input id="check1"  type="checkbox" onchange="getJotto(document.getElementById('candidates'))"/> get jotto combinations
+            </div>
+            <p id="results" style="font-family:monospace;  "></p>
+        </form>
+        
+        <div>
+            <div style="display:flex; flex-direction:row;">
+        
+                <p id="best" style="font-family:monospace; display:block; width:310px;"></p>
+                <p id="info" style="font-family:monospace;  display:block; width:250px;"></p>
+                <div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise.png"/>   <div style="line-height: 44px;margin-left: 8px;">blunt (176)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_r.png"/> <div style="line-height: 44px;margin-left: 8px;">front (93)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_a.png"/> <div style="line-height: 44px;margin-left: 8px;">cloak (93)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_i.png"/> <div style="line-height: 44px;margin-left: 8px;">pinto (104)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_s.png"/> <div style="line-height: 44px;margin-left: 8px;">sloth (117)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_e.png"/> <div style="line-height: 44px;margin-left: 8px;">olden (149)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise__R.png"/><div style="line-height: 44px;margin-left: 8px;">rumor (12)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise__A.png"/><div style="line-height: 44px;margin-left: 8px;">tangy (95)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise__I.png"/><div style="line-height: 44px;margin-left: 8px;">glint (52)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise__S.png"/><div style="line-height: 44px;margin-left: 8px;">bossy (15)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise__E.png"/><div style="line-height: 44px;margin-left: 8px;">elude (63)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_ra.png"/> <div style="line-height: 44px;margin-left: 8px;">acorn (84)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_rs.png"/> <div style="line-height: 44px;margin-left: 8px;">snort (39)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_re.png"/> <div style="line-height: 44px;margin-left: 8px;">other (112)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_as.png"/> <div style="line-height: 44px;margin-left: 8px;">stalk (54)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_ae.png"/> <div style="line-height: 44px;margin-left: 8px;">bleat (66)</div></div>
+                    <div style="display:flex; flex-direction:row;"><img src="raise_se.png"/> <div style="line-height: 44px;margin-left: 8px;">steep (83)</div></div>
+                    
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+
